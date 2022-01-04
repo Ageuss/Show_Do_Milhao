@@ -1,21 +1,23 @@
 <template>
         <fieldset>
             <div id="createAccount">
+                
                <div id="login-row" class="row justify-content-center align-items-center">
-                   <form @submit.prevent="register">
-                        <div class="form-group">
-                            <input id="name" type="text" class="form-control" placeholder="Nome" v-model="user.name" required>
+                   <form id="login-form" class="form">
+                       <img alt="Vue logo" src="..\Login\quizsf.png" />
+                        <div class="mb-2">
+                            <input id="name" type="text" class="form-control" placeholder="Nome" required>
                         </div>
-                        <div class="form-group">
-                            <input id="cpf" type="int" class="form-control" placeholder="CPF" v-model="user.cpf" required>
+                        <div class="mb-2">
+                            <input id="email" type="email" class="form-control" placeholder="E-mail" required>
                          </div>
-                        <div class="form-group">
-                            <input id="email" type="email" class="form-control" placeholder="E-mail" v-model="user.email" required>
-                         </div>
-                        <div class="form-group">
-                            <input id="password" type="password" class="form-control" placeholder="Senha" v-model="user.password" required>
+                        <div class="mb-2">
+                            <input id="password" type="password" class="form-control" placeholder="Senha" required>
                         </div>
-                        <div class="form-group">
+                        <div class="mb-2">
+                            <input id="cpf" type="img" class="form-control" placeholder="Avatar"  required>
+                         </div>
+                        <div class="mb-2">
                             <button id="registerBtn" class="btn btn-success" type="submit">ABRIR MINHA CONTA</button>
                         </div>
                    </form>
@@ -24,6 +26,39 @@
         </fieldset>
     
 </template>
+
+
+<style scoped>
+img {
+  margin-left: 39.5%;
+  width: 20%;
+  height: 30%;
+}
+
+.form-control,
+.btn-success {
+  height: 20% !important;
+  width: 30%;
+  margin-left: 35%;
+  position: relative;
+  top: 50px;
+}
+
+.btn-success {
+  background-color: rgb(241, 241, 18);
+  color: #000;
+  margin: 0%;
+  height: 6.5% !important;
+  position: relative;
+  margin-left: 35%;
+}
+
+.btn-success:hover {
+  background-color: rgb(255, 238, 0);
+  color: rgb(29, 26, 26);
+}
+
+</style>
 
 <script src='./register.js'></script>
 
