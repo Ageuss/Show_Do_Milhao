@@ -43,6 +43,7 @@
 .btn-primary {
   background-color: rgb(241, 241, 18);
   color: #000;
+  border-color: none;
   margin: 0%;
   height: 6.5% !important;
   position: relative;
