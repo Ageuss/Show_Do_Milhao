@@ -25,7 +25,7 @@
     <button class="btn btn-primary" id="button_login" type="submit">
       ENTRE EM SUA CONTA
     </button>
-
+     <h6>Não possui conta? <a href="./register">Cadastre-se</a></h6>
     <div class="inline"></div>
   </form>
 </template>
@@ -58,6 +58,12 @@ img {
   margin-left: 39.5%;
   width: 20%;
   height: 30%;
+}
+h6, a{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 10%;
 }
 </style>
 

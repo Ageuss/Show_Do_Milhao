@@ -7,30 +7,21 @@
         INICIAR JOGO
       </button>
     </div>
-    <span>
-      <button id="btnMenu">
-        <svg
-          fill="#ffff"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 40 50"
-          width="30px"
-          height="30px"
-        >
-          <path
-            d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
-          />
-        </svg>
-      </button>
-      <button id="btnLogout" >
-        Sair 
-      </button>
-    </span>
+    <nav id="menu">
+    <fieldset>
+        <input id="edit" type="button" value="Editar Conta">
+      <input  id="delete" type="button" value="Remover Conta">
+      <input  id="delete" type="button" value="Adicionar Perguntas">
+      <input  id="delete" type="button" value="Lista de Perguntas">
+    </fieldset>
+    </nav>
   </div>
 </template>
 
-<script src='./homePage.js'></script>
+<script src='./menu.js'></script>
 
 <style scoped>
+
 img {
   margin-left: 39.5%;
   width: 20%;
@@ -59,22 +50,33 @@ h2 {
   width: 33%;
 }
 
-#btnMenu {
+#menu{
   position: absolute;
-  top: 2%;
-  left: 0.5%;
-  background: #000;
-}
-#btnLogout,
-#Logout {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  background: #000;
+  top: 0;
+  bottom: 0;  
+  left: 0;
+  display: grid;
+  width: 18%;
+  background-color: #505050;
   color: #fff;
 }
-     button:hover {
-            background-color: blue;
-            color:white;
-        }
+fieldset{
+     position: absolute;
+     top: 0;
+     left: 18%;
+}
+input{
+    border: none;
+    display: grid;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 45px;    
+    padding-left: 5px;
+    box-sizing: border-box;
+
+    background-color: #505050;
+    color: #fff;
+}
+
 </style>

@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Login from './pages/Login/Login.vue'
 import Register from './pages/Register/Register.vue'
 import HomePage from './pages/HomePage/HomePage.vue'
+import Menu from './pages/Menu/Menu.vue'
 
 Vue.use(VueRouter)
 
@@ -13,12 +14,16 @@ const routes = [
     component: Login
   },
   {
-    path: '/Register',
+    path: '/register',
     component: Register
   },
   {
     path: '/homePage',
     component: HomePage
+  },
+  {
+    path: '/menu',
+    component: Menu
   }
    
 ]
